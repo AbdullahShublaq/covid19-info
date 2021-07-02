@@ -1,0 +1,210 @@
+﻿.blog-page{
+    @extend .p-t-50;
+    @extend .p-b-50;
+
+    .single_post {
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+
+        .img-post {
+            position: relative;
+            overflow: hidden;
+            max-height: 500px;
+
+            > img {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+                -webkit-transition: -webkit-transform .4s ease, opacity .4s ease;
+                transition: transform .4s ease, opacity .4s ease;
+                max-width: 100%;
+                filter: none;
+                -webkit-filter: grayscale(0);
+                -webkit-transform: scale(1.01);
+            }
+           
+
+            &:hover{
+
+                img{
+                    -webkit-transform: scale(1.02);
+                    -ms-transform: scale(1.02);
+                    transform: scale(1.02);
+                    opacity: .7;
+                    filter: gray;
+                    -webkit-filter: grayscale(1); 
+                    transition: all .8s ease-in-out;
+                    -webkit-transition: all .8s ease-in-out;
+                }
+
+                .social_share{
+                    @extend .displayblock;
+                }
+            }
+
+            .social_share{
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                display: none;
+            }            
+        }        
+
+        .meta{
+            list-style: none;
+            @extend .padding-0;
+            @extend .margin-0;
+            li{
+                @extend .inlineblock;
+                @extend .m-r-15;
+
+                a {
+                    font-style: italic;
+                    color: $grey-500;
+                    text-decoration: none;
+                    font-size: 12px;
+
+                    i {
+                        margin-right: 6px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 26px;
+            -webkit-transition: color .4s ease;
+            transition: color .4s ease;
+
+            a {               
+                color: $grey-900;
+                text-decoration: none;
+            }
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        .blockquote{
+            p {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
+    .right-box {
+        .popular-post{
+            ul{
+                li{
+                    @extend .m-b-15;
+                    &:last-child{
+                        @extend .m-b-0;
+                    }
+                    h5{
+                        font-size: 18px;
+                        a{
+                            color: $grey-900;
+                        }
+                    }
+                    .author-name, .date{
+                        @extend .displayblock;
+                    }
+                }
+            }
+        }
+        .tag-clouds{
+            ul {
+                li {
+                    @extend .inlineblock;
+                    margin: 5px;
+                }
+            }
+        }
+        .instagram-plugin{
+            overflow: hidden;
+            li {
+                float: left;
+                overflow: hidden;
+            }
+        }
+        .single_post{
+
+            p{
+                @extend .p-l-10;
+                @extend .p-r-10;
+            }
+
+            small{
+                @extend .p-l-10;
+                @extend .p-r-10;
+            }
+        }
+    }
+
+    .comment-reply{
+        li{
+            @extend .m-b-15;
+            &:last-child{
+                margin-bottom: none;
+            }
+
+            p{
+                @extend .m-b-0;
+                font-size: 15px;
+                color: $grey-600;
+            }
+        }
+        .list-inline{
+            li{
+                @extend .inlineblock;
+                @extend .margin-0;
+                padding-right: 20px;
+                a{
+                    font-size: 13px;
+                }
+            }
+        }
+       
+    }
+
+}
+
+.page.with-sidebar.right .left-box {
+    margin-right: -20px;
+}
+
+@media (max-width: 414px) {
+    .section.blog-page {
+        padding: 20px 0;
+    }
+    .blog-page{
+
+        .left-box {
+
+            .single-comment-box{
+                > ul{
+                    > li {
+                        padding: 25px 0;
+                    }
+                }
+
+                ul{
+                    li{
+                        .icon-box {
+                            display: inline-block;
+                        }
+                        .text-box {
+                            display: block;
+                            padding-left: 0;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.img-gallery{
+  @extend .p-t-50;
+  @extend .p-b-50;
+
+  .popup-gallery {
+      @extend .inlineblock;
+      @extend .m-b-30;
+      position: relative;
+      a{
+        @extend .inlineblock;
+      }
+
+      span.eye-wrapper {
+          opacity: 0;
+          position: absolute;
+      }
+
+      &:hover{
+
+        span.eye-wrapper {
+          @extend .displayblock;
+          background-color: $black;                   
+          overflow: hidden;
+          z-index: 999;
+          height: 100% !important;
+          top: 0%;
+          margin-top: 0px;
+          left: 0%;
+          right: 0%;          
+          color: $white;
+          text-align: center;
+          opacity: 0.8;
+
+          i{
+            font-size: 26px;
+            top: 42%;
+            position: absolute;        
+          }
+        }
+      }
+  }
+}

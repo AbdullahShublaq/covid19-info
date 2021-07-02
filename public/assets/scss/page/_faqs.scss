@@ -1,0 +1,30 @@
+.faqs{
+  @extend .p-t-50;
+  @extend .p-b-50;
+
+  .panel-group{
+    .panel{
+      @extend .m-b-5;
+      background: $grey-100;
+      border-radius: $border-radius-large;
+      .panel-title{
+        margin: 0;
+        font-size: 16px;
+        padding: 20px;
+        a{
+          @extend .displayblock;
+          &:focus{
+            outline: none;
+            text-decoration: none;
+          }
+        }
+      }
+      .panel-body{
+        border-top: 1px solid $white;
+        padding: 20px;
+        font-size: 15px;
+        line-height: 26px;
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.about-us-section {
+  .page-text {
+    .mission-vision {
+      .grp-area {
+        @extend .p-l-50;
+        position: relative;
+        i {
+          font-size: 30px;
+          line-height: 30px;
+          color: $grey-700;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        h5 {
+          font-size: 18px;
+          line-height: 30px;
+          color: $grey-900;
+          @extend .m-b-5;
+        }
+        p {          
+          line-height: 24px;
+          color: $grey-700;
+          @extend .m-b-20;
+        }
+        ul {
+          li {
+            @extend .p-l-30;
+            position: relative;
+            i {
+              font-size: 18px;
+              line-height: 30px;
+              color: $blue-grey-700;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            p {
+              font-size: 18px;
+              line-height: 30px;
+              color: $blue-grey-700;
+              @extend .m-b-0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .opening-hours {
+    @extend .m-t-45;
+    h6 {
+      font-size: 16px;
+      line-height: 24px;
+      color: $grey-900;
+      text-transform: none;
+      font-weight: $font-weight-normal;
+      @extend .m-b-10;
+      i {
+        color: $grey-700;
+      }
+    }
+    ul {
+      li {
+        font-size: 16px;
+        line-height: 35px;
+        label {
+          @extend .m-b-0;
+          @extend .p-l-25;
+          min-width: 190px;
+          position: relative;
+          color: $blue-grey-700;
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            color: $grey-700;
+          }
+        }
+        span {
+          font-weight: 600;
+          color: #f96332;
+        }
+      }
+    }
+  }
+}
+
+.what-we-do {
+  @extend .p-t-65;
+  @extend .p-b-50;
+  background-color: #2d3035;
+
+  .what-we-box {
+    @extend .p-l-55;
+    @extend .p-b-50;
+    position: relative;
+
+    i {
+      font-size: 40px;
+      line-height: 40px;
+      color: $grey-400;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    h6 {
+      font-size: 20px;
+      line-height: 30px;
+      color: $grey-400;
+      text-transform: none;
+      font-weight: 300;
+      @extend .m-b-20;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: $grey-500;
+      font-weight: 300;
+      @extend .m-b-0;
+    }
+  }
+}
+
+.our-team{
+  &.about-team{
+    @extend .p-b-50;
+  }
+}
+
+.our_location{
+  @extend .p-t-50;
+
+  #world-map-markers{
+    @extend .m-b-25;
+  }
+  .location_list{
+    @extend .m-b-0;
+    @extend .margin-0;
+    li{        
+        @extend .align-center;
+        @extend .padding-0;
+        .body{
+            border: 2px solid $white;
+            padding: 20px 0;
+        }
+        i{
+            font-size: 25px;
+            color: $grey-500;
+        }
+        h4{
+            @extend .m-t-0;
+            @extend .m-b-0;
+        }
+    }
+  }
+
+}

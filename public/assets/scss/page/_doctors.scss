@@ -1,0 +1,47 @@
+.our-team {
+  &.doctors-team {
+    @extend .p-b-20;
+  }
+}
+
+.about-us-section.doctor-detail-cnt {
+  .doctor-cnt {
+    p {
+      font-size: 14px;
+      line-height: 24px;      
+      color: $grey-700;
+      @extend .m-b-20;
+      span {
+        font-size: 18px;
+        line-height: 24px;        
+        color: $grey-900;
+      }
+      &.ul-title {
+        @extend .m-b-5;
+      }
+    }
+    > ul {
+      li {
+        position: relative;        
+        line-height: 30px;
+        color: $grey-700;
+        @extend .p-l-25;
+
+        &:before {
+          content: "\f2fb";
+          font-family: 'Material-Design-Iconic-Font';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .opening-hours {
+      @extend .m-t-15;
+    }
+  }
+}
+.fun-fact.doctor-fun-fact{
+  background-color: #2d3035;
+}

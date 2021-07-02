@@ -1,0 +1,78 @@
+#hero {
+  margin-top: -55px;
+  .slider {
+    background-size: cover;
+    background-position: center center;
+    max-height: 550px;
+    height: 550px;
+    @extend .p-t-80;
+    @extend .p-b-50;
+
+    .title {      
+      @extend .m-t-50;
+      @extend .m-b-15;
+      font-size: 50px;
+      color: #263238;
+      line-height: 45px;
+      font-weight: $font-weight-normal;
+      
+      span{
+        font-size: 30px;
+        font-weight: $font-weight-light;        
+      }
+      strong{
+        font-weight: $font-weight-bold;
+      }
+    }
+    .sub-title{
+      font-size: 16px;
+      color: $grey-600;
+      @extend .m-b-0;
+      max-width: 400px;
+    }
+
+    .slider_form {
+      position: relative;
+      padding: 20px 5px;
+      background: $white;
+      border-radius: $border-radius-large;
+      bottom: -65px;
+      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.07);
+      margin: 0 auto;
+    }
+
+    > div {
+      height: 100%;
+    }
+  }
+  .inner-banner {
+    max-height: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    @extend .p-t-0;
+    @extend .p-b-0;
+
+    .container {
+      height: 100%;
+
+      .title {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: $font-weight-normal;
+        color: $blue-grey-900;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @extend .m-t-0;
+        @extend .m-b-0;
+
+        big {
+          font-size: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}

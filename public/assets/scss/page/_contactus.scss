@@ -1,0 +1,128 @@
+.contact-section {
+  @extend .p-t-65;
+  @extend .p-b-100;
+
+  .contact-form {
+    @extend .p-t-20;
+    @extend .p-r-20;
+    @extend .p-b-20;
+    @extend .p-l-20;
+
+    .appoitntment-title {
+      font-size: 15px;
+      line-height: 20px;
+      color: $blue-grey-900;
+      font-weight: $font-weight-normal;
+      @extend .m-b-15;
+    }
+
+    .form-group {
+      @extend .m-b-15;
+      @extend .m-t-15;
+    }
+    textarea {
+      .form-group {
+        @extend .m-b-15;
+      }
+    }
+    .btn {
+      @extend .p-l-40;
+      @extend .p-r-40;
+    }
+  }
+
+  .contact-sidebar{
+    background-color: #a890d3;
+    @extend .p-t-20;
+    @extend .p-r-20;
+    @extend .p-b-20;
+    @extend .p-l-20;
+    border-radius: $border-radius-large;
+    h4{
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: $font-weight-normal;
+      color: $white;
+      @extend .m-b-20;
+      @extend .m-t-0;
+    }
+    p{
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: $font-weight-normal;
+      color: $white;
+      @extend .m-b-20;
+    }
+
+    .add-grp{
+      border-bottom: 1px solid $white;
+      @extend .m-b-0;
+      li{
+        position: relative;
+        @extend .m-b-20;
+        @extend .p-l-40;
+        i{
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 26px;
+          color: $white;
+        }
+        p{
+          font-size: 16px;
+          line-height: 26px;
+          color: $white;
+        }
+      }
+    }
+    .social-icon{
+      @extend .m-b-0;
+      @extend .p-t-25;
+      @extend .p-b-5;
+      li{
+        float: left;
+        a{
+          font-size: 16px;
+          line-height: 20px;
+          color: $white;
+          @extend .m-r-10;
+        }
+      }
+    }
+  }
+}
+
+.our-partner{
+  @extend .p-t-65;
+  @extend .p-b-50;
+
+  .out-partner-logo{
+    a{
+      display: block;
+      border: 1px solid $grey-200;
+      text-align: center;
+      background-color: #f8f8f8;
+      border-radius: $border-radius-large;
+      -webkit-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+
+      img{
+        border-radius: $border-radius-large;
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -webkit-transition: all .8s ease-in-out;
+        transition: all .8s ease-in-out;
+      }
+
+      &:hover{
+        border-color: $cyan-400;
+        box-shadow: 0 2px 25px 0 rgba(0,0,0,0.07);
+
+        img{
+          filter: none;
+          -webkit-filter: none;
+        }
+      }
+    }
+  }
+}

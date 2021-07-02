@@ -1,0 +1,80 @@
+.service-section {
+  @extend .p-t-65;
+  @extend .p-b-100;
+
+  .service-cnt {
+    p {
+      font-size: $font-size-base + 3px;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  .services-btn-grp {
+    .service-btn {
+      width: calc(50% - 15px);
+      a {
+        display: block;
+        color: $white;
+        @extend .p-t-10;
+        @extend .p-r-10;
+        @extend .p-b-10;
+        @extend .p-l-10;
+        border-radius: $border-radius-large;
+
+        i {
+          background-color: $white-bg;
+          width: 54px;
+          margin: 0 auto;
+          border-radius: 100%;
+          line-height: $line-height-lg;
+          font-size: $font-size-h3;
+        }
+        h4 {
+          font-size: $font-size-h4;
+          @extend .m-t-15;
+          @extend .m-b-0;
+          font-weight: $font-weight-semi;
+          line-height: $line-height-nav-link;
+
+          span {
+            font-size: $font-size-base;
+            display: block;
+            font-weight: $font-weight-normal;
+          }
+        }
+      }
+      &.find-doctor {
+        a {
+          background-color: #a890d3;
+          @extend .m-r-15;
+          i {
+            color: #a890d3;
+          }
+        }
+      }
+      &.book-appoitntment {
+        a {
+          background-color: $cyan-400;
+          @extend .m-l-15;
+          i {
+            color: $cyan-400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.enquiry-section.enquiry-section {
+  @extend .p-t-60;
+  @extend .p-b-60;
+  h4{
+    @extend .m-b-0;
+    @extend .m-t-5;
+  }
+}
+
+.department-list.services-list{
+  @extend .p-t-65;
+  @extend .p-b-20;
+}

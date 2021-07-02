@@ -1,0 +1,176 @@
+@media (max-width: 575px) {
+  .wrapper{
+    overflow: hidden;
+  }
+  #hero {
+    .slider {
+      .slider_form {
+        bottom: -105px;
+      }
+    }
+  }
+  .why-choose-us {
+    .common-cnt {
+      .btn-primary {
+        display: block;
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+  .service-section {
+    .services-btn-grp {
+      .service-btn {
+        width: calc(100% - 0px);
+        a {
+          margin: 0 0 15px !important;
+        }
+      }
+    }
+  }
+  .main_header {
+    #top-nav {
+      .text-right{
+        text-align: center !important;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  #hero {
+    .slider {
+      .title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 0;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .about-us-section {
+    .box-img {
+      margin-bottom: 20px;
+    }
+  }
+  .our-best-service {
+    .service-box {
+      text-align: center;
+    }
+  }
+  .why-choose-us {
+    .common-cnt {
+      .section-top {
+        p {
+          font-size: 26px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .home-blog {
+    .blog-box {
+      margin-bottom: 30px;
+    }
+  }
+  #footer {
+    .form {
+      .form-group {
+        margin-bottom: 5px;
+      }
+    }
+    .copyright {
+      text-align: center;
+    }
+  }
+  .enquiry-section {
+    .text-sm-center {
+      text-align: center;
+    }
+  }
+  .about-us-section {
+    .opening-hours {
+      ul {
+        li {
+          line-height: 25px;
+          margin-bottom: 10px;
+          label {
+            display: block;
+          }
+          span {
+            padding-left: 25px;
+          }
+        }
+      }
+    }
+    .row.justify-content-between {
+      .p-r-0 {
+        padding-right: 15px;
+      }
+    }
+  }
+  .doctor-detail-cnt {
+    .p-r-0 {
+      padding-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main_header{
+    #navbar{
+      .navbar {
+        a.nav-link{
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  #hero{
+    margin-top: -45px;
+  }
+
+  .navbar {
+    .navbar-toggler{
+      width: 57px;
+      height: 53px;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+    a.nav-link{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .about-us-section{
+    padding-top: 100px;
+  }
+  .section-title.left {
+    padding-bottom: 0;
+  }
+  .our-partner {
+    padding-bottom: 20px;
+    .out-partner-logo {
+      a {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .main_header {
+    #navbar {
+      .navbar {
+        .input-group {
+          width: 220px;
+        }
+      }
+    }
+  }
+}

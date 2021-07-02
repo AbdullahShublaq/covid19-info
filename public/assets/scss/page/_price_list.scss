@@ -1,0 +1,32 @@
+.price_list{
+  @extend .p-t-50;
+  @extend .p-b-30;
+  .card{
+    // border: 1px solid $grey-200;
+    h5{
+      @extend .m-b-0;
+      @extend .p-t-35;
+    }
+    
+    .price {
+      width: 100%;     
+
+      h3 {
+        font-size: 2em;
+        @extend .m-t-20;
+        @extend .m-b-0;
+        @extend .p-t-20;
+        @extend .p-b-20;
+        font-weight: $font-weight-bold;
+
+        span {          
+          font-size: 0.4em;
+        }
+      }
+    }
+    li{
+      line-height: 40px;
+      font-size: 15px;
+    }
+  }
+}

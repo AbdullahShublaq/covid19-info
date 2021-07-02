@@ -1,0 +1,8 @@
+.department-list{
+  @extend .p-t-100;
+  @extend .p-b-70;
+
+  .box-img-cnt{
+    @extend .m-b-30;
+  }
+}
